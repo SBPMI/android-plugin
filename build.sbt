@@ -20,7 +20,7 @@ publishTo <<= (version) { version: String =>
 credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
 
 libraryDependencies ++= Seq(
-  "com.google.ddmlib" % "ddmlib" % "r16",
+  "com.google.android.tools" % "ddmlib" % "r10",
   "net.sf.proguard" % "proguard-base" % "4.8"
 )
 
