@@ -2,7 +2,7 @@ name := "sbt-android-plugin"
 
 organization := "org.scala-sbt"
 
-version := "0.6.3-SNAPSHOT"
+version := "0.6.4-SNAPSHOT"
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-Xcheckinit", "-Xfatal-warnings")
 
@@ -20,7 +20,7 @@ publishTo <<= (version) { version: String =>
 credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
 
 libraryDependencies ++= Seq(
-  "com.google.android.tools" % "ddmlib" % "r10",
+  "com.google.ddmlib" % "ddmlib" % "r16",
   "net.sf.proguard" % "proguard-base" % "4.8"
 )
 
